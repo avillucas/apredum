@@ -70,4 +70,50 @@ export class LoginPage implements OnInit {
     }
   }
 
+
+  loadAdmin(){
+    this.loadTesterUser(this.testerUsers.admin.username, this.testerUsers.admin.pass);
+  }
+  loadInvitado(){
+    this.loadTesterUser(this.testerUsers.invitado.username, this.testerUsers.invitado.pass);
+  }
+  loadUsuario(){
+    this.loadTesterUser(this.testerUsers.usuario.username, this.testerUsers.usuario.pass);
+  }
+  loadAnonimo(){
+    this.loadTesterUser(this.testerUsers.anonimo.username, this.testerUsers.anonimo.pass);
+  }
+  loadTester(){
+    this.loadTesterUser(this.testerUsers.tester.username, this.testerUsers.tester.pass);
+  }
+  
+
+  private loadTesterUser(email:string , password:string){
+    this.ionicForm.get('username').setValue(email);
+    this.ionicForm.get('password').setValue(password);
+  }
+
+  private testerUsers = {
+    admin : {
+      username:'admin@admin.com',
+      pass:'1111'
+    },
+    invitado : {
+      username:'invitado@invitado.com',
+      pass:'2222'
+    },
+    usuario : {
+      username:'usuario@usuario.com',
+      pass:'3333'
+    },
+    anonimo : {
+      username:'anonimo@anonimo.com',
+      pass:'4444'
+    },
+    tester : {
+      username:'tester@tester.com',
+      pass:'5555'
+    },
+  };
+  
 }
