@@ -41,8 +41,8 @@ export class ColoresPage implements OnInit {
     this.decirColor('negro');
   }
 
-  decirBlanco(){
-    this.decirColor('blanco');
+  decirVerde(){
+    this.decirColor('verde');
   }
 
   decirColor(color){    
