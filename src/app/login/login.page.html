@@ -11,19 +11,19 @@
           <!-- user error messages -->
           <div *ngIf="(username.dirty || username.touched) && username.errors" class="errors ion-padding">
           <span *ngIf="username.errors?.required"> El email es requerido.</span>
-          <span *ngIf="username.errors?.minlength"> El email debe tener al menos cuatro caracteres.</span>
+          <span *ngIf="username.errors?.minlength"> El email debe tener al menos cuatro carácteres.</span>
           <span *ngIf="username.errors?.email"> Debe agregar un email valido.</span>
           </div>
         </div>
         <div class="input-group">
           <ion-item >
-            <ion-label position="floating">Password</ion-label>
+            <ion-label position="floating">Contraseña</ion-label>
             <ion-input type="password" formControlName="password" required></ion-input>
           </ion-item>
           <!-- password Error messages -->
           <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors ion-padding">
-            <span *ngIf="password.errors?.required"> El password es requerido.</span>
-            <span *ngIf="password.errors?.minlength"> El password debe tener al menos cuatro caracteres.</span>
+            <span *ngIf="password.errors?.required"> La contraseña es requerido.</span>
+            <span *ngIf="password.errors?.minlength">  La contraseña debe tener al menos cuatro carácteres.</span>
           </div>
         </div>
         <ion-button type="submit" expand="block">Ingresar</ion-button>

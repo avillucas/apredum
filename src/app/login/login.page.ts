@@ -64,7 +64,7 @@ export class LoginPage implements OnInit {
         },
         async (res) => {
           await loading.dismiss();
-          await this.presentToast('Usuario o password incorrecto.');
+          await this.presentToast('Usuario o Contraseña son incorrectos.');
         }
       );
     }

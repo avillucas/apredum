@@ -22,8 +22,13 @@ export class LanguagesService {
     Storage.set({key:  this.STORAGE_NAME, value: lang});  
   }
 
-  getIdioma(){
+  getIdioma():string {
     return this.lang;
+  }
+
+  getLanguageFlag():string {
+    const ext = (this.getIdioma() == 'en') ? '.svg':'.png';
+    return '/assets/banderas/'+this.getIdioma()+ext;
   }
 
   async loadLang(){

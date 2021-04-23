@@ -9,12 +9,13 @@ import { AuthapiService } from '../services/authapi.service';
   styleUrls: ['./dashboard.page.scss'],
 })
 export class DashboardPage implements OnInit {
-
+  
   constructor(
     private router:Router,
-    private languagesService:LanguagesService,
+    public languagesService:LanguagesService,
     private authService: AuthapiService, 
-  ) { }
+  ) {     
+  }
 
   ngOnInit() {
   }

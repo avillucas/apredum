@@ -1,5 +1,7 @@
     <ion-fab vertical="start" horizontal="start" class="fab-idiomas">
-      <ion-fab-button color="light" >Idioma</ion-fab-button>
+      <ion-fab-button color="light" >
+        <ion-img [src]="languagesService.getLanguageFlag()" ></ion-img>        
+      </ion-fab-button>
       <ion-fab-list side="end">
         <ion-fab-button (click)="setEs()" color="light">
           <ion-img src="/assets/banderas/es.png" alt="Español"></ion-img>
@@ -14,7 +16,7 @@
     </ion-fab>
 
     <ion-fab vertical="start" horizontal="end" class="fab-temas">
-      <ion-fab-button color="dark" >Tema</ion-fab-button>
+      <ion-fab-button color="light" >Tema</ion-fab-button>
       <ion-fab-list side="start">
         <ion-fab-button (click)="setColores()"  color="dark" ><ion-icon name="color-palette"></ion-icon></ion-fab-button>
         <ion-fab-button (click)="setAnimales()" color="dark" ><ion-icon name="logo-octocat"></ion-icon></ion-fab-button>
