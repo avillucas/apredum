@@ -35,8 +35,8 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.ionicForm = this.formBuilder.group({
-      username: ['admin@tester.com.ar', [Validators.required, Validators.minLength(4), Validators.email]],
-      password: ['admin', [Validators.required, Validators.minLength(4)]],
+      username: ['', [Validators.required, Validators.minLength(4), Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(4)]],
     })
   }
 
@@ -60,7 +60,7 @@ export class LoginPage implements OnInit {
       this.authService.login(this.ionicForm.value).subscribe(
         async (res) => {
           await loading.dismiss();
-          this.router.navigateByUrl('/dashboard', { replaceUrl: true });
+          this.router.navigateByUrl('/colores', { replaceUrl: true });
         },
         async (res) => {
           await loading.dismiss();
@@ -115,5 +115,5 @@ export class LoginPage implements OnInit {
       pass:'5555'
     },
   };
-  
+
 }

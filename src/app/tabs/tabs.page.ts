@@ -8,9 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  
+  
 
-  constructor(private authService: AuthapiService, private router: Router) {}
+  constructor(private authService: AuthapiService, private router: Router) {
+    
+  }
  
+
   async logout() {
     await this.authService.logout();
     this.router.navigateByUrl('/login', { replaceUrl: true });

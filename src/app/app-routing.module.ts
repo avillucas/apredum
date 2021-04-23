@@ -13,11 +13,6 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule),
     canLoad:[AutoLoginGuard],
-  },  
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule),
-    canLoad:[AuthGuard],
   },
   {
     path:'',
@@ -27,6 +22,12 @@ const routes: Routes = [
   {
     path: 'splash',
     loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },
+ 
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule),
+    canLoad:[AuthGuard],
   }
 ];
 @NgModule({
