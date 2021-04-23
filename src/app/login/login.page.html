@@ -1,8 +1,3 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Ingresar</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
   <ion-row>
@@ -37,27 +32,29 @@
     </ion-col>
   </ion-row>
 </ion-content>
-<ion-footer  class="ion-no-border ion-text-center ">
-  <ion-toolbar >
-    <ion-title>Accesos</ion-title>
-    <ion-grid id="usuarios" >    
-      <ion-row >
-        <ion-col>
-          <ion-button type="button" expand="block" color="tertiary" (click)="loadAdmin()" >Admin</ion-button>           
-        </ion-col>             
-       <ion-col>
-         <ion-button type="button" expand="block" color="tertiary" (click)="loadInvitado()"  >Invitado</ion-button>           
-       </ion-col>            
-       <ion-col>
-         <ion-button type="button" expand="block" color="tertiary"(click)="loadUsuario()"  >Usuario</ion-button>           
-       </ion-col>    
-       <ion-col>
-         <ion-button type="button" expand="block" color="tertiary" (click)="loadAnonimo()"  >Anónimo</ion-button>           
-       </ion-col>    
-       <ion-col>
-         <ion-button type="button" expand="block" color="tertiary" (click)="loadTester()" >Tester</ion-button>           
-       </ion-col>    
-     </ion-row>
-    </ion-grid>    
-  </ion-toolbar>
-</ion-footer>
+
+
+    <ion-fab vertical="bottom"  horizontal="start" class="fab-tester">
+      <ion-fab-button color="tertiary" >Testers</ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button (click)="loadAdmin()" color="tertiary">
+          ADM
+        </ion-fab-button>
+        <ion-fab-button  color="tertiary" (click)="loadInvitado()" >
+          INV
+        </ion-fab-button>
+        <ion-fab-button  color="tertiary" (click)="loadUsuario()">
+          USU
+        </ion-fab-button>
+        <ion-fab-button  color="tertiary" (click)="loadAnonimo()">
+          ANM
+        </ion-fab-button>
+        <ion-fab-button  color="tertiary" (click)="loadAdmin()" >
+          ADM
+        </ion-fab-button>
+        <ion-fab-button  color="tertiary" (click)="loadTester()" >
+          TST
+        </ion-fab-button>      
+      </ion-fab-list>    
+    </ion-fab>
+
