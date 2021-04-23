@@ -1,7 +1,23 @@
+@media screen and (orientation:landscape) {
+    ion-content {
+        
+    }
+}
+@media screen and (orientation:portrait) {
+    ion-content {
+        --padding-top: 20vh;    
+    }
+}
 ion-content {
-    --padding-top: 40%;
+    h1{
+        color:white;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+    }    
     --padding-start: 10%;
     --padding-end: 10%;
+    
     --background: rgba(255, 187, 0, 0.986);
     
 }
