@@ -20,26 +20,26 @@ export class NumerosPage implements OnInit {
 
 
   ngAfterViewInit() {
-    this.audio.preload('es-1', 'assets/colores/es/1.mp4');
-    this.audio.preload('es-2', 'assets/colores/es/2.mp4');
-    this.audio.preload('es-3', 'assets/colores/es/3.mp4');
-    this.audio.preload('es-4', 'assets/colores/es/4.mp4');
-    this.audio.preload('es-5', 'assets/colores/es/5.mp4');
-    this.audio.preload('es-6', 'assets/colores/es/6.mp4');
+    this.audio.preload('es-1', 'assets/numeros/es/1.ogg');
+    this.audio.preload('es-2', 'assets/numeros/es/2.ogg');
+    this.audio.preload('es-3', 'assets/numeros/es/3.ogg');
+    this.audio.preload('es-4', 'assets/numeros/es/4.ogg');
+    this.audio.preload('es-5', 'assets/numeros/es/5.ogg');
+    this.audio.preload('es-6', 'assets/numeros/es/6.ogg');
     //
-    this.audio.preload('en-1', 'assets/colores/en/1.mp4');
-    this.audio.preload('en-2', 'assets/colores/en/2.mp4');
-    this.audio.preload('en-3', 'assets/colores/en/3.mp4');
-    this.audio.preload('en-4', 'assets/colores/en/4.mp4');
-    this.audio.preload('en-5', 'assets/colores/en/5.mp4');
-    this.audio.preload('en-6', 'assets/colores/en/6.mp4');
+    this.audio.preload('en-1', 'assets/numeros/en/1.ogg');
+    this.audio.preload('en-2', 'assets/numeros/en/2.ogg');
+    this.audio.preload('en-3', 'assets/numeros/en/3.ogg');
+    this.audio.preload('en-4', 'assets/numeros/en/4.ogg');
+    this.audio.preload('en-5', 'assets/numeros/en/5.ogg');
+    this.audio.preload('en-6', 'assets/numeros/en/6.ogg');
     //
-    this.audio.preload('pt-1', 'assets/colores/pt/1.mp4');
-    this.audio.preload('pt-2', 'assets/colores/pt/2.mp4');
-    this.audio.preload('pt-3', 'assets/colores/pt/3.mp4');
-    this.audio.preload('pt-4', 'assets/colores/pt/4.mp4');
-    this.audio.preload('pt-5', 'assets/colores/pt/5.mp4');
-    this.audio.preload('pt-6', 'assets/colores/pt/6.mp4');
+    this.audio.preload('pt-1', 'assets/numeros/pt/1.ogg');
+    this.audio.preload('pt-2', 'assets/numeros/pt/2.ogg');
+    this.audio.preload('pt-3', 'assets/numeros/pt/3.ogg');
+    this.audio.preload('pt-4', 'assets/numeros/pt/4.ogg');
+    this.audio.preload('pt-5', 'assets/numeros/pt/5.ogg');
+    this.audio.preload('pt-6', 'assets/numeros/pt/6.ogg');
   }
   
   decirUno(){

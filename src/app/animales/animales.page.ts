@@ -18,26 +18,26 @@ export class AnimalesPage implements OnInit {
   }
   
   ngAfterViewInit() {
-    this.audio.preload('es-pato', 'assets/colores/es/pato.mp4');
-    this.audio.preload('es-vaca', 'assets/colores/es/vaca.mp4');
-    this.audio.preload('es-caballo', 'assets/colores/es/caballo.mp4');
-    this.audio.preload('es-gallina', 'assets/colores/es/gallina.mp4');
-    this.audio.preload('es-chancho', 'assets/colores/es/chancho.mp4');
-    this.audio.preload('es-gallo', 'assets/colores/es/gallo.mp4');
+    this.audio.preload('es-pato', 'assets/animales/es/pato.ogg');
+    this.audio.preload('es-vaca', 'assets/animales/es/vaca.ogg');
+    this.audio.preload('es-caballo', 'assets/animales/es/caballo.ogg');
+    this.audio.preload('es-gallina', 'assets/animales/es/gallina.ogg');
+    this.audio.preload('es-chancho', 'assets/animales/es/chancho.ogg');
+    this.audio.preload('es-gallo', 'assets/animales/es/gallo.ogg');
     //
-    this.audio.preload('en-pato', 'assets/colores/en/pato.mp4');
-    this.audio.preload('en-vaca', 'assets/colores/en/vaca.mp4');
-    this.audio.preload('en-caballo', 'assets/colores/en/caballo.mp4');
-    this.audio.preload('en-gallina', 'assets/colores/en/gallina.mp4');
-    this.audio.preload('en-chancho', 'assets/colores/en/chancho.mp4');
-    this.audio.preload('en-gallo', 'assets/colores/en/gallo.mp4');
+    this.audio.preload('en-pato', 'assets/animales/en/pato.ogg');
+    this.audio.preload('en-vaca', 'assets/animales/en/vaca.ogg');
+    this.audio.preload('en-caballo', 'assets/animales/en/caballo.ogg');
+    this.audio.preload('en-gallina', 'assets/animales/en/gallina.ogg');
+    this.audio.preload('en-chancho', 'assets/animales/en/chancho.ogg');
+    this.audio.preload('en-gallo', 'assets/animales/en/gallo.ogg');
     //
-    this.audio.preload('pt-pato', 'assets/colores/pt/pato.mp4');
-    this.audio.preload('pt-vaca', 'assets/colores/pt/vaca.mp4');
-    this.audio.preload('pt-caballo', 'assets/colores/pt/caballo.mp4');
-    this.audio.preload('pt-gallina', 'assets/colores/pt/gallina.mp4');
-    this.audio.preload('pt-chancho', 'assets/colores/pt/chancho.mp4');
-    this.audio.preload('pt-gallo', 'assets/colores/pt/gallo.mp4');
+    this.audio.preload('pt-pato', 'assets/animales/pt/pato.ogg');
+    this.audio.preload('pt-vaca', 'assets/animales/pt/vaca.ogg');
+    this.audio.preload('pt-caballo', 'assets/animales/pt/caballo.ogg');
+    this.audio.preload('pt-gallina', 'assets/animales/pt/gallina.ogg');
+    this.audio.preload('pt-chancho', 'assets/animales/pt/chancho.ogg');
+    this.audio.preload('pt-gallo', 'assets/animales/pt/gallo.ogg');
   }
   decirPato(){
     this.decirAnimal('pato');
