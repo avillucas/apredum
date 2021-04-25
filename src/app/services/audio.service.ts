@@ -14,7 +14,7 @@ export class AudioService {
   private audioPlayer: HTMLAudioElement = new Audio();
   private forceWebAudio: boolean = true;
 
-  constructor(private platform: Platform, private nativeAudio: NativeAudio){
+  constructor(private platform: Platform, public nativeAudio: NativeAudio){
 
   }
 
