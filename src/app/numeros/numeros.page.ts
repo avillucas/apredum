@@ -20,12 +20,12 @@ export class NumerosPage implements OnInit {
 
 
   ngAfterViewInit() {
-    this.audio.preload('es-1', 'assets/numeros/es/1.ogg');
-    this.audio.preload('es-2', 'assets/numeros/es/2.ogg');
-    this.audio.preload('es-3', 'assets/numeros/es/3.ogg');
-    this.audio.preload('es-4', 'assets/numeros/es/4.ogg');
-    this.audio.preload('es-5', 'assets/numeros/es/5.ogg');
-    this.audio.preload('es-6', 'assets/numeros/es/6.ogg');
+    this.audio.preload('es-1', 'assets/numeros/es/1.mp3');
+    this.audio.preload('es-2', 'assets/numeros/es/2.mp3');
+    this.audio.preload('es-3', 'assets/numeros/es/3.mp3');
+    this.audio.preload('es-4', 'assets/numeros/es/4.mp3');
+    this.audio.preload('es-5', 'assets/numeros/es/5.mp3');
+    this.audio.preload('es-6', 'assets/numeros/es/6.mp3');
     //
     this.audio.preload('en-1', 'assets/numeros/en/1.ogg');
     this.audio.preload('en-2', 'assets/numeros/en/2.ogg');

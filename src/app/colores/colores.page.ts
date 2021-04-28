@@ -19,12 +19,12 @@ export class ColoresPage implements OnInit {
 
   }
   ngAfterViewInit() {
-    this.audio.preload('es-rojo', 'assets/colores/es/rojo.ogg');
-    this.audio.preload('es-azul', 'assets/colores/es/azul.ogg');
-    this.audio.preload('es-amarillo', 'assets/colores/es/amarillo.ogg');
-    this.audio.preload('es-negro', 'assets/colores/es/negro.ogg');
-    this.audio.preload('es-verde', 'assets/colores/es/verde.ogg');
-    this.audio.preload('es-naranja', 'assets/colores/es/naranja.ogg');
+    this.audio.preload('es-rojo', 'assets/colores/es/rojo.mp3');
+    this.audio.preload('es-azul', 'assets/colores/es/azul.mp3');
+    this.audio.preload('es-amarillo', 'assets/colores/es/amarillo.mp3');
+    this.audio.preload('es-negro', 'assets/colores/es/negro.mp3');
+    this.audio.preload('es-verde', 'assets/colores/es/verde.mp3');
+    this.audio.preload('es-naranja', 'assets/colores/es/naranja.mp3');
     //
     this.audio.preload('en-rojo', 'assets/colores/en/rojo.ogg');
     this.audio.preload('en-azul', 'assets/colores/en/azul.ogg');
