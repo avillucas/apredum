@@ -23,9 +23,9 @@ import { NativeAudio } from '@ionic-native/native-audio/ngx';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig, 'mytestapp'),
-    AngularFireAuthModule,
-    AngularFirestoreModule, 
+    //AngularFireModule.initializeApp(environment.firebaseConfig, 'mytestapp'),
+    //AngularFireAuthModule,
+    //AngularFirestoreModule, 
     IonicStorageModule.forRoot(),
     HttpClientModule
     
