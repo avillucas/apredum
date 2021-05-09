@@ -16,7 +16,11 @@
     </ion-fab>
 
     <ion-fab vertical="start" horizontal="end" class="fab-temas">
-      <ion-fab-button color="light" >Tema</ion-fab-button>
+        <ion-fab-button color="light" >          
+          <ion-icon *ngIf="this.themeService.isColor()" name="color-palette"></ion-icon>
+          <ion-icon *ngIf="this.themeService.isAnimal()" name="logo-octocat"></ion-icon>
+          <span     *ngIf="this.themeService.isNumber()"  >#</span>
+      </ion-fab-button>
       <ion-fab-list side="start">
         <ion-fab-button (click)="setColores()"  color="dark" ><ion-icon name="color-palette"></ion-icon></ion-fab-button>
         <ion-fab-button (click)="setAnimales()" color="dark" ><ion-icon name="logo-octocat"></ion-icon></ion-fab-button>
