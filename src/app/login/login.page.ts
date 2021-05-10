@@ -60,7 +60,7 @@ export class LoginPage implements OnInit {
       this.authService.login(this.ionicForm.value).subscribe(
         async (res) => {
           await loading.dismiss();
-          this.router.navigateByUrl('/dashboard/colores', { replaceUrl: true });
+          this.router.navigateByUrl('/dashboard/animales', { replaceUrl: true });
         },
         async (res) => {
           await loading.dismiss();

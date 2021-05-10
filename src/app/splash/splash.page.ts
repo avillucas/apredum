@@ -12,7 +12,7 @@ export class SplashPage implements OnInit {
     private router: Router
   ) {       
     setTimeout(()=>{
-      this.router.navigateByUrl('dashboard/colores');
+      this.router.navigateByUrl('dashboard/animales');
     },1800);    
   }
 
