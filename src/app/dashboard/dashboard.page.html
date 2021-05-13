@@ -19,12 +19,12 @@
         <ion-fab-button color="light" >          
           <ion-icon *ngIf="this.themeService.isColor()" name="color-palette"></ion-icon>
           <ion-icon *ngIf="this.themeService.isAnimal()" name="logo-octocat"></ion-icon>
-          <span     *ngIf="this.themeService.isNumber()"  >#</span>
+          <ion-img *ngIf="this.themeService.isNumber()"   src="assets/icon/123-numbers.svg"></ion-img>          
       </ion-fab-button>
       <ion-fab-list side="start">
-        <ion-fab-button (click)="setColores()"  color="dark" ><ion-icon name="color-palette"></ion-icon></ion-fab-button>
-        <ion-fab-button (click)="setAnimales()" color="dark" ><ion-icon name="logo-octocat"></ion-icon></ion-fab-button>
-        <ion-fab-button (click)="setNumeros()"  color="dark" >#</ion-fab-button>
+        <ion-fab-button (click)="setColores()"  color="light" ><ion-icon name="color-palette"></ion-icon></ion-fab-button>
+        <ion-fab-button (click)="setAnimales()" color="light" ><ion-icon name="logo-octocat"></ion-icon></ion-fab-button>        
+        <ion-fab-button (click)="setNumeros()"  color="light" > <ion-img  src="assets/icon/123-numbers.svg"></ion-img>  </ion-fab-button>
       </ion-fab-list>    
     </ion-fab>
   
